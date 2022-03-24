@@ -9,4 +9,9 @@ else:
     for i in range(n):
         name = input()
         friends[name] = 0
+    print('Enter the total bill value:')
+    total_bill = float(input())
+    split_value = round(total_bill / n, 2)
+    for name in friends:
+        friends[name] = split_value
     print(friends)
